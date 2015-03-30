@@ -9,7 +9,7 @@
         <h2 class="post-title"><a href="{{url}}">{{{title}}}</a></h2>
         {{/if}}
         <section class="post-content">
-            {{excerpt words=25}}…
+            {{excerpt words=130 append=" <a href='{{url}}'> cont'd</a>" round=true}}
         </section>
         <section class="post-meta">
             <span class="date"><i class="fa fa-clock-o"></i> <a href="{{url}}"><time class="timesince" data-timesince="{{date format='X'}}" datetime="{{date format='YYYY-MM-DDTHH:mm'}}" title="{{date format='D MMMM YYYY'}}">{{date published_at timeago='true'}}</time></a></span>
